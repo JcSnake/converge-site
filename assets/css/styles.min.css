@@ -1,0 +1,212 @@
+/**
+ * Hoja de estilos general
+ **/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    position: relative;
+    min-height: 100vh;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+footer {
+    background: #fff;
+    position: absolute !important;
+    width: 100%;
+    bottom: 0 !important;
+    left: 0;
+}
+
+hr {
+    width: 10%;
+    border: 3px #18ACE4 solid;
+    margin-left: 7%;
+}
+
+#list {
+    color: #fff;
+    list-style: none;
+}
+
+#list li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #18ACE4; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+#sendData {
+    
+}
+/**
+ * Fonts fams
+ */
+
+.f-100 {
+    font-weight: 100;
+}
+
+.f-300 {
+    font-weight: 300;
+}
+
+.f-400 {
+    font-weight: 400 !important;
+}
+
+.f-700 {
+    font-weight: 700;
+}
+
+.f-900 {
+    font-weight: 900;
+}
+
+/**
+ * Font size
+ */
+
+.fs-10 {
+    font-size: 10px;
+}
+
+.fs-18 {
+    font-size: 18px !important;
+}
+
+.fs-23 {
+    font-size: 23px !important;
+}
+
+/**
+ * Backgrounds
+ */
+
+.bg-pruple {
+    background-image: url('../images//bg@2x.png');
+    background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+/**
+ * Color
+ */
+
+.c-white {
+    color: #fff;
+}
+
+.c-gray {
+    color: #656667;
+}
+
+.c-declaracion, .c-declaracion:hover {
+    color: #18ACE4;
+}
+
+/**
+ * Buttons
+ */
+
+.btn-blue {
+    background: #18ACE4;
+}
+
+/**
+ * Line height
+ */
+
+.lh-text-title {
+    line-height: 2;
+}
+
+/**
+ * Max width
+ **/
+
+.mx-width {
+    max-width: 1000px;
+}
+
+/**
+ * Form style
+ */
+
+.form-style {
+    position: sticky;
+    top: 30px;
+    bottom: 20px;
+}
+
+/**
+ * Media Query
+ */
+
+@media screen and (max-width: 576px) {
+    .d-mobile {
+        display: block;
+    }
+
+    .d-desktop {
+        display: none;
+    }
+
+    .txt-center {
+        text-align: center;
+    }
+
+    .fs-title {
+        font-size: 23px;
+    }
+
+    .fs-paragrahp {
+        font-size: 15px !important;
+    }
+
+    .form-style {
+        position: inherit;
+        top: 30px;
+        bottom: 20px;
+    }
+
+    .img-resp {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .mb-res {
+        margin-bottom: 0px !important;
+    }
+
+    .mt-res {
+        margin-top: 0px !important;
+    }
+
+    .lh-text-title {
+        line-height: 1.2;
+    }
+}
+
+@media screen and (min-width:767px) {
+    .d-mobile {
+        display: none;
+    }
+
+    .d-desktop {
+        display: block;
+    }
+}
